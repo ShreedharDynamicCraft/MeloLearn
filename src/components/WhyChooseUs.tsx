@@ -1,47 +1,50 @@
+'use client'
+import { WavyBackground } from "./ui/wavy-background"
+import { AnimatedTooltip } from "./ui/animated-tooltip";
 
-"use client";
-import React from "react";
-import { StickyScroll } from "./ui/sticky-scroll-reveal";
-
-const musicSchoolContent = [
+const instructors = [
     {
-      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
-      description:
-        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
+      id: 1,
+      name: 'Riya Bhatnagar',
+      designation: 'Vocal Coach',
+      image:
+        'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
     },
     {
-      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
-      description:
-        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
+      id: 2,
+      name: 'Arjun Mehta',
+      designation: 'Guitar Instructor',
+      image:
+        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80',
     },
     {
-      title: 'Discover Your Sound with Us: A Personal Journey in Music Mastery',
-      description:
-        'Embark on a musical journey that’s uniquely yours. Our personalized instruction adapts to your individual needs, setting the stage for unparalleled growth and creativity. At our music school, your aspirations meet our dedicated support, creating a harmonious path to mastery.',
+      id: 3,
+      name: 'Neha Kapoor',
+      designation: 'Piano Teacher',
+      image:
+        'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
     },
     {
-      title: 'Live Feedback & Engagement',
-      description:
-        'Immerse yourself in an interactive learning experience where feedback is immediate, just like real-time changes in a collaborative project. This approach enhances your understanding and mastery of music concepts and performance techniques.',
-    },
-    {
-      title: 'Cutting-Edge Curriculum',
-      description:
-        'Our curriculum is continuously updated to include the latest music education trends and technologies, ensuring you’re always learning with the most current and effective methods. Say goodbye to outdated materials and welcome an education that evolves with the industry.',
-    },
-    {
-      title: 'Limitless Learning Opportunities',
-      description:
-        'With our expansive resource library and dynamic course offerings, you’ll never find yourself without something new to explore. Our platform provides continuous opportunities for growth, ensuring your musical skills are always advancing.',
+      id: 4,
+      name: 'Rahul Iyer',
+      designation: 'Drumming Expert',
+      image:
+        'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
     },
   ];
 
-function WhyChooseUs() {
+function Instructors() {
   return (
-    <div>
-        <StickyScroll content={musicSchoolContent} />
+    <div className="relative h-[40rem] overflow-hidden flex items-center justify-center">
+        <WavyBackground className="w-full max-w-7xl mx-auto flex flex-col items-center justify-center h-full">
+            <h2 className="text-2xl md:text-4xl lg:text-7xl text-white font-bold text-center mb-8">Meet Our Instructors</h2>
+            <p className="text-base md:text-lg text-white text-center mb-4">Discover the talented professionals who will guide your musical journey</p>
+            <div className="flex flex-row items-center justify-center mb-10 w-full">
+                <AnimatedTooltip items={instructors} />
+            </div>
+        </WavyBackground>
     </div>
   )
 }
 
-export default WhyChooseUs
+export default Instructors;

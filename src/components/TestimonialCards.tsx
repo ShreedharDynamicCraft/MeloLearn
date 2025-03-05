@@ -4,32 +4,32 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 const musicSchoolTestimonials = [
     {
       quote:
-        'Joining the music school transformed my understanding of music and helped me to truly discover my own sound. The instructors are world-class!',
-      name: 'Alex Johnson',
-      title: 'Guitar Student',
+        'Joining this music school helped me deeply understand rhythm and melody, and I discovered my unique musical style. The instructors here are truly exceptional!',
+      name: 'Aarav Sharma',
+      title: 'Tabla Student',
     },
     {
       quote:
-        "The community and support at this school are unmatched. I've grown not just as a pianist, but also as a performer, thanks to their comprehensive approach.",
-      name: 'Samantha Lee',
+        "The environment and support at this school are outstanding. I have grown not just as a pianist but also as a confident performer, thanks to their holistic approach.",
+      name: 'Meera Iyer',
       title: 'Piano Student',
     },
     {
       quote:
-        "This school offered me the tools and confidence to take my singing to the next level. I'm endlessly grateful for the personalized coaching.",
-      name: 'Michael Chen',
-      title: 'Vocal Student',
+        "This school provided me with the right guidance and confidence to take my singing to a professional level. The personalized coaching experience has been incredible!",
+      name: 'Kabir Verma',
+      title: 'Hindustani Vocal Student',
     },
     {
       quote:
-        'As a violinist, finding the right mentor can be challenging, but this school matched me with a teacher who truly understands my goals and challenges.',
-      name: 'Emily Taylor',
+        'As a violinist, finding the right mentor is not easy, but this school connected me with a teacher who truly understands my aspirations and challenges.',
+      name: 'Ananya Mukherjee',
       title: 'Violin Student',
     },
     {
       quote:
-        'The production courses here opened my eyes to the intricacies of music production. Highly recommend for any aspiring producers!',
-      name: 'Chris Morales',
+        'The music production courses here have given me deep insights into the technical and creative aspects of producing music. Highly recommended for aspiring music producers!',
+      name: 'Rohan Nair',
       title: 'Music Production Student',
     },
   ];
@@ -37,7 +37,7 @@ const musicSchoolTestimonials = [
 function MusicSchoolTestimonials() {
   return (
     <div className="h-[40rem] w-full dark:bg-black dark:bg-grid-white/[0.2] relative flex flex-col items-center justify-center overflow-hidden">
-        <h2 className="text-3xl font-bold text-center mb-8 z-10">Hear our Harmony: Voices of success</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 z-10">Our Musical Journey: Voices of Success</h2>
         <div className="flex justify-center w-full overflow-hidden px-4 sm:px-6 lg:px-8">
             <div className="w-full max-w-6xl">
             <InfiniteMovingCards
@@ -51,4 +51,7 @@ function MusicSchoolTestimonials() {
   )
 }
 
-export default MusicSchoolTestimonials
+export default MusicSchoolTestimonials;
+
+
+
